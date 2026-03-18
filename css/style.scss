@@ -66,6 +66,17 @@ $font-semi-bold: semiBold, sans-serif;
     background-color: transparent;
 }
 
+@mixin comm{
+    display: block;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    min-width: 1058px;
+    min-height: 255px;
+    margin-top: 80px;
+    color: #224722;
+}
+
 @font-face {
     font-family: regular;
     src: url(../fonts/Inter/static/Inter_18pt-Regular.ttf);
@@ -94,10 +105,13 @@ body {
     background-color: #E7EDDE;
 }
 
+
 /* шапка */
 .header_1 {
     display: flex;
     justify-content: center;
+    gap: 598px;
+}
 
 .header__support {
     @extend .header_1;
@@ -107,12 +121,11 @@ body {
     margin-top: 40px;
 }
 
-}
 .header__planta {
     @extend .header_1;
     width: 106px;
     height: 29px;
-    margin: 35.5px 598px 0 598px;
+    margin-top: 35.5px;
 }
 
 .header__get_the_app {
@@ -126,6 +139,7 @@ body {
     border-radius: 9999px;
     max-width: 85.17px;
 }
+
 
 /* блок 1 */
 .conteiner1 {
@@ -160,11 +174,9 @@ body {
 }
 
 .store__1 {
+    display: flex;
+    gap: 16px;
     margin-top: 52.1px;
-}
-
-.app-store1 {
-    margin-right: 16px;
 }
 
 .app-icon {
@@ -249,6 +261,7 @@ body {
 
 .care_schedules {
     @include text-up-regular(1.063em);
+    margin-bottom: 8px;
 }
 
 .care_reminders {
@@ -292,10 +305,12 @@ body {
 
 .scan {
     @include text-up-regular(1.063em);
+    margin-bottom: 8px;
 }
 
 .plant__identification {
     @include heading1;
+    margin-bottom: 20px;
 }
 
 .plant__identification__text {
@@ -327,7 +342,7 @@ body {
 
 #foto__plants_text__p {
     @include badge-on-image;
-    padding: 16px 11.8px 15px 52px;
+    padding: 16px 11.8px 17px 52px;
     margin-top: 20px;
     width: 127.32px;
 }
@@ -372,11 +387,12 @@ body {
 
 .find {
     @include text-up-regular(1.063em);
+    margin-bottom: 10px;
 }
 
 .Light__meter {
     @include heading1;
-
+    margin-bottom: 20px;
 }
 
 .Light__meter__text {
@@ -401,6 +417,7 @@ body {
 
 .Plant__doctor {
     @include text-up-regular(1.063em);
+    margin-bottom: 13px;
 }
 
 .Dr__Planta {
@@ -430,7 +447,7 @@ body {
 }
 
 #Change__text__p {
-    padding: 15px 11.8px 14px 52px;
+    padding: 15px 11.8px 19px 52px;
     margin-top: 56px;
     @include badge-on-image;
     width: 178.61px;
@@ -448,10 +465,11 @@ body {
 }
 
 .store__2 {
-    margin-top: 60px;
+    margin-top: 55px;
     display: flex;
     justify-content: center;
     text-align: center;
+    gap: 16px;
 }
 
 .store__app1 {
@@ -460,9 +478,8 @@ body {
 }
 
 .store__app2 {
-    display: flex;
-    justify-content: baseline;
-    margin-left: 16px;
+    @extend .store__app1;
+    // margin-left: 16px;
 }
 
 .app-store2 {
@@ -489,50 +506,46 @@ body {
 #aps_1 {
     background-color: #D9E7CB;
     margin-right: 5px;
-    padding-left: 27.5px;
+    padding-left: 30px;
     position: absolute;
-    /* border-radius: 9999px 0 0 9999px; */
-    margin-top: 11px;
+    border-radius: 9999px 0 0 9999px;
+    margin-top: 15px;
 }
 
 #aps_2 {
-    margin-top: 12px;
-    background-color: #D9E7CB;
-    margin-right: 5px;
-    padding-left: 25px;
-    position: absolute;
-    border-radius: 9999px 0 0 9999px;
+    @extend #aps_1;
+    padding-left: 26px;
 }
 
 .comments__people {
     display: flex;
     justify-content: center;
+    gap: 30px;
 }
 
 .comm1 {
-    display: block;
-    justify-content: center;
-    background-color: #FFFFFF;
-    border-radius: 20px;
-    min-width: 1058px;
-    max-height: 255px;
-    margin-top: 80px;
-    color: #224722;
-    margin-left: 15px;
-    margin-right: 15px;
+    @include comm;
 }
 
-.Totally__amazing {
+.comm2{
+    @include comm;
+}
+
+.comm3{
+    @include comm;
+}
+
+.UserComment {
     background-color: #FFFFFF;
     font-size: 1.5em;
     font-family: medium;
     line-height: 39px;
-    margin: 27px 24px 17px 24px;
-    min-width: 186.92px;
+    margin: 27px 24px 10px 24px;
+    max-width: 186.92px;
     min-height: 33px;
 }
 
-.Totally__amazing__text {
+.UserComment__text {
     background-color: #FFFFFF;
     font-size: 1.125em;
     font-family: regular;
@@ -577,12 +590,8 @@ body {
 .change__slide {
     display: flex;
     justify-content: center;
-}
-
-.change__slide1 {
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 40px;
+    gap: 10px;
+    margin-top: 38px;
 }
 
 /* комментарий 2 */
@@ -757,26 +766,28 @@ footer {
     background-color: #172C17;
     display: flex;
     justify-content: center;
+    gap: 285px;
 }
 
 #planta__heading__footer_img {
     margin-top: 81px;
-    margin-right: 285px;
+    // margin-right: 285px;
 }
 
-.footer__content {
-    display: block;
-    justify-content: space-between;
+.footer__li {
+    display: flex;
+    // justify-content: space-between;
     margin-top: 69px;
+    gap: 168px;
 }
 
 #footer__navigation {
     width: 188px;
-    margin-right: 168px;
+    // margin-right: 168px;
 }
 
 #footer__contact {
-    margin-right: 168px;
+    // margin-right: 168px;
     width: 105px;
 }
 
@@ -801,30 +812,35 @@ footer {
 
 .store__3 {
     display: flex;
+    gap: 446px;
     justify-content: center;
 }
 
 .store__3__icon {
     margin-top: 216px;
+    display: flex;
+    gap: 24px;
 }
 
 #planta__icon {
-    margin-right: 24px;
+    // margin-right: 24px;
+    height: 36px;
+    width: 36px;
 }
 
 #download__aps {
-    margin-right: 12px;
+    // margin-right: 12px;
 }
 
 #download__googlePlay {
-    margin-left: 12px;
+    // margin-left: 12px;
 }
 
 .getPlanta {
     font-family: semiBold;
     font-size: 1.125em;
     color: #E0FFC0;
-    margin-left: 446px;
+    // margin-left: 446px;
     margin-top: 225px;
 }
 
@@ -844,6 +860,7 @@ footer {
         justify-content: space-between;
         align-items: center;
         padding: 15px 20px;
+        gap: 0;
     }
 
     .header__planta {
@@ -890,7 +907,7 @@ footer {
         font-size: 3.5em;
         width: auto;
         height: auto;
-        line-height: 1.2;
+        line-height: 75px;
         text-align: center;
     }
 
@@ -900,6 +917,7 @@ footer {
         padding: 0 15px;
         text-align: center;
         margin-top: 15px;
+        line-height: 20px;
     }
 
     .store__1 {
@@ -1027,7 +1045,7 @@ footer {
 
     /* === Комментарии === */
     .people__saying {
-        font-size: 2.5em;
+        font-size: 2.25em;
         line-height: 1.2;
         padding: 0 20px;
     }
@@ -1059,17 +1077,22 @@ footer {
     .comments__people {
         align-items: center;
         gap: 15px;
-        padding: 0 20px;
+        // padding: 0 20px;
     }
 
-    .comm1 {
+    .comm1, .comm3{
+        display: none;
+    }
+
+    .comm2 {
         min-width: 100%;
-        margin: 0;
+        margin: 0px;
     }
 
-    #Super__helpful__text{
-        margin-bottom: 20px;
-    }
+    // .Totally__amazing__text1{
+    //     margin-bottom: 0 20px;
+    //     width: 350px;
+    // }
 
     /* === Сетка растений === */
     .all__content6 {
@@ -1085,7 +1108,7 @@ footer {
     }
 
     .whatever__plant {
-        font-size: 2.375em;
+        font-size: 2.25em;
         line-height: 1.2em;
     }
 
@@ -1176,12 +1199,15 @@ footer {
         width: 150px;
     }
 
-    .footer__content {
+    .footer__li {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         width: 100%;
         margin-top: 20px;
+        gap: 30px; 
+        flex-direction: column;
+        align-items: center;
     }
 
     #footer__navigation, #footer__contact, #footer__follow {
@@ -1193,6 +1219,7 @@ footer {
         flex-direction: column;
         align-items: center;
         margin-top: 30px;
+        gap: 0;
     }
 
     .store__3__icon {

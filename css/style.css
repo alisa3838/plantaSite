@@ -33,11 +33,13 @@ body {
 }
 
 /* шапка */
-.header_1, .header__get_the_app, .header__get_the_app .header__support, .header__planta, .header__planta .header__support, .header_1 .header__support {
+.header_1, .header__get_the_app, .header__planta, .header__support {
   display: flex;
   justify-content: center;
+  gap: 598px;
 }
-.header_1 .header__support, .header__get_the_app .header__support, .header__planta .header__support {
+
+.header__support {
   font-size: 0.9375em;
   font-family: regular;
   color: #224722;
@@ -47,7 +49,7 @@ body {
 .header__planta {
   width: 106px;
   height: 29px;
-  margin: 35.5px 598px 0 598px;
+  margin-top: 35.5px;
 }
 
 .header__get_the_app {
@@ -94,11 +96,9 @@ body {
 }
 
 .store__1 {
+  display: flex;
+  gap: 16px;
   margin-top: 52.1px;
-}
-
-.app-store1 {
-  margin-right: 16px;
 }
 
 .app-icon {
@@ -191,6 +191,7 @@ body {
   color: #224722;
   line-height: 28px;
   margin-bottom: 3px;
+  margin-bottom: 8px;
 }
 
 .care_reminders {
@@ -246,6 +247,7 @@ body {
   color: #224722;
   line-height: 28px;
   margin-bottom: 3px;
+  margin-bottom: 8px;
 }
 
 .plant__identification {
@@ -255,6 +257,7 @@ body {
   line-height: 56px;
   margin-bottom: 24px;
   width: 460px;
+  margin-bottom: 20px;
 }
 
 .plant__identification__text {
@@ -294,7 +297,7 @@ body {
   z-index: 1;
   font-family: regular, sans-serif;
   font-size: 1.063em;
-  padding: 16px 11.8px 15px 52px;
+  padding: 16px 11.8px 17px 52px;
   margin-top: 20px;
   width: 127.32px;
 }
@@ -347,6 +350,7 @@ body {
   color: #224722;
   line-height: 28px;
   margin-bottom: 3px;
+  margin-bottom: 10px;
 }
 
 .Light__meter {
@@ -356,6 +360,7 @@ body {
   line-height: 56px;
   margin-bottom: 24px;
   width: 460px;
+  margin-bottom: 20px;
 }
 
 .Light__meter__text {
@@ -387,6 +392,7 @@ body {
   color: #224722;
   line-height: 28px;
   margin-bottom: 3px;
+  margin-bottom: 13px;
 }
 
 .Dr__Planta {
@@ -424,7 +430,7 @@ body {
 }
 
 #Change__text__p {
-  padding: 15px 11.8px 14px 52px;
+  padding: 15px 11.8px 19px 52px;
   margin-top: 56px;
   position: absolute;
   border-radius: 9999px;
@@ -447,21 +453,16 @@ body {
 }
 
 .store__2 {
-  margin-top: 60px;
+  margin-top: 55px;
   display: flex;
   justify-content: center;
   text-align: center;
+  gap: 16px;
 }
 
-.store__app1 {
+.store__app1, .store__app2 {
   display: flex;
   justify-content: baseline;
-}
-
-.store__app2 {
-  display: flex;
-  justify-content: baseline;
-  margin-left: 16px;
 }
 
 .app-store2 {
@@ -485,27 +486,23 @@ body {
   margin-left: 3.8px;
 }
 
-#aps_1 {
+#aps_1, #aps_2 {
   background-color: #D9E7CB;
   margin-right: 5px;
-  padding-left: 27.5px;
+  padding-left: 30px;
   position: absolute;
-  /* border-radius: 9999px 0 0 9999px; */
-  margin-top: 11px;
+  border-radius: 9999px 0 0 9999px;
+  margin-top: 15px;
 }
 
 #aps_2 {
-  margin-top: 12px;
-  background-color: #D9E7CB;
-  margin-right: 5px;
-  padding-left: 25px;
-  position: absolute;
-  border-radius: 9999px 0 0 9999px;
+  padding-left: 26px;
 }
 
 .comments__people {
   display: flex;
   justify-content: center;
+  gap: 30px;
 }
 
 .comm1 {
@@ -514,24 +511,44 @@ body {
   background-color: #FFFFFF;
   border-radius: 20px;
   min-width: 1058px;
-  max-height: 255px;
+  min-height: 255px;
   margin-top: 80px;
   color: #224722;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 
-.Totally__amazing {
+.comm2 {
+  display: block;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  min-width: 1058px;
+  min-height: 255px;
+  margin-top: 80px;
+  color: #224722;
+}
+
+.comm3 {
+  display: block;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  min-width: 1058px;
+  min-height: 255px;
+  margin-top: 80px;
+  color: #224722;
+}
+
+.UserComment {
   background-color: #FFFFFF;
   font-size: 1.5em;
   font-family: medium;
   line-height: 39px;
-  margin: 27px 24px 17px 24px;
-  min-width: 186.92px;
+  margin: 27px 24px 10px 24px;
+  max-width: 186.92px;
   min-height: 33px;
 }
 
-.Totally__amazing__text {
+.UserComment__text {
   background-color: #FFFFFF;
   font-size: 1.125em;
   font-family: regular;
@@ -576,12 +593,8 @@ body {
 .change__slide {
   display: flex;
   justify-content: center;
-}
-
-.change__slide1 {
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 40px;
+  gap: 10px;
+  margin-top: 38px;
 }
 
 /* комментарий 2 */
@@ -801,26 +814,24 @@ footer {
   background-color: #172C17;
   display: flex;
   justify-content: center;
+  gap: 285px;
 }
 
 #planta__heading__footer_img {
   margin-top: 81px;
-  margin-right: 285px;
 }
 
-.footer__content {
-  display: block;
-  justify-content: space-between;
+.footer__li {
+  display: flex;
   margin-top: 69px;
+  gap: 168px;
 }
 
 #footer__navigation {
   width: 188px;
-  margin-right: 168px;
 }
 
 #footer__contact {
-  margin-right: 168px;
   width: 105px;
 }
 
@@ -845,30 +856,25 @@ footer {
 
 .store__3 {
   display: flex;
+  gap: 446px;
   justify-content: center;
 }
 
 .store__3__icon {
   margin-top: 216px;
+  display: flex;
+  gap: 24px;
 }
 
 #planta__icon {
-  margin-right: 24px;
-}
-
-#download__aps {
-  margin-right: 12px;
-}
-
-#download__googlePlay {
-  margin-left: 12px;
+  height: 36px;
+  width: 36px;
 }
 
 .getPlanta {
   font-family: semiBold;
   font-size: 1.125em;
   color: #E0FFC0;
-  margin-left: 446px;
   margin-top: 225px;
 }
 
@@ -880,11 +886,12 @@ footer {
   body {
     overflow-x: hidden;
   }
-  .header_1, .header_1 .header__support, .header__planta, .header__planta .header__support, .header__get_the_app, .header__get_the_app .header__support {
+  .header_1, .header__support, .header__planta, .header__get_the_app {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
+    gap: 0;
   }
   .header__planta {
     margin: 0;
@@ -901,7 +908,7 @@ footer {
     padding: 5px 12px;
     white-space: nowrap;
   }
-  .header_1 .header__support, .header__planta .header__support, .header__get_the_app .header__support {
+  .header_1 .header__support, .header__support .header__support, .header__planta .header__support, .header__get_the_app .header__support {
     margin-top: 0;
     font-size: 0.8125em;
   }
@@ -923,7 +930,7 @@ footer {
     font-size: 3.5em;
     width: auto;
     height: auto;
-    line-height: 1.2;
+    line-height: 75px;
     text-align: center;
   }
   .conteiner1__text {
@@ -932,6 +939,7 @@ footer {
     padding: 0 15px;
     text-align: center;
     margin-top: 15px;
+    line-height: 20px;
   }
   .store__1 {
     margin-top: 30px;
@@ -1044,7 +1052,7 @@ footer {
   }
   /* === Комментарии === */
   .people__saying {
-    font-size: 2.5em;
+    font-size: 2.25em;
     line-height: 1.2;
     padding: 0 20px;
   }
@@ -1056,7 +1064,7 @@ footer {
   #mark {
     font-size: 1.0625em;
   }
-  #aps_1 {
+  #aps_1, #aps_2 {
     height: 20px;
     width: 20px;
     margin-top: 9px;
@@ -1071,14 +1079,13 @@ footer {
   .comments__people {
     align-items: center;
     gap: 15px;
-    padding: 0 20px;
   }
-  .comm1 {
+  .comm1, .comm3 {
+    display: none;
+  }
+  .comm2 {
     min-width: 100%;
-    margin: 0;
-  }
-  #Super__helpful__text {
-    margin-bottom: 20px;
+    margin: 0px;
   }
   /* === Сетка растений === */
   .all__content6 {
@@ -1089,7 +1096,7 @@ footer {
     padding: 0 10px;
   }
   .whatever__plant {
-    font-size: 2.375em;
+    font-size: 2.25em;
     line-height: 1.2em;
   }
   #whatever__plant__text {
@@ -1162,12 +1169,15 @@ footer {
     margin: 0;
     width: 150px;
   }
-  .footer__content {
+  .footer__li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
     margin-top: 20px;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
   }
   #footer__navigation, #footer__contact, #footer__follow {
     margin: 0;
@@ -1177,6 +1187,7 @@ footer {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+    gap: 0;
   }
   .store__3__icon {
     margin-top: 20px;
