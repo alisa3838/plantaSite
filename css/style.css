@@ -101,7 +101,7 @@ body {
   margin-top: 52.1px;
 }
 
-.app-icon {
+.app-icon, .app-menu, .add-plant {
   margin: 356.1px 586.4px auto 782.6px;
   position: absolute;
   border-radius: 9999px;
@@ -112,18 +112,10 @@ body {
 
 .add-plant {
   margin: 545.28px 190.8px auto 1116.2px;
-  position: absolute;
-  border-radius: 9999px;
-  z-index: 1;
-  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
 .app-menu {
-  position: absolute;
-  z-index: 1;
   margin: 726.4px 196.65px auto 927.35px;
-  border-radius: 9999px;
-  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
 .phone {
@@ -335,7 +327,7 @@ body {
   font-family: regular, sans-serif;
   font-size: 1.063em;
   margin-top: 422px;
-  padding: 16px 16px 14px 52px;
+  padding: 18px 16px 20px 52px;
   margin-left: 22px;
 }
 
@@ -430,7 +422,7 @@ body {
 }
 
 #Change__text__p {
-  padding: 15px 11.8px 19px 52px;
+  padding: 18px 11.8px 20px 52px;
   margin-top: 56px;
   position: absolute;
   border-radius: 9999px;
@@ -595,6 +587,22 @@ body {
   justify-content: center;
   gap: 10px;
   margin-top: 38px;
+}
+
+.circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: #224722 1px solid;
+}
+
+.change__slide :hover {
+  background-color: #224722;
+}
+
+.circle:active {
+  background-color: #224722;
 }
 
 /* комментарий 2 */
@@ -840,7 +848,7 @@ footer {
 }
 
 /* список */
-#footer__heading {
+#footer__heading, #footer__items {
   color: #E0FFC0;
   font-size: 1.125em;
   font-family: semiBold;
@@ -849,15 +857,13 @@ footer {
 
 #footer__items {
   color: #7C956B;
-  font-size: 1.125em;
-  font-family: semiBold;
-  line-height: 40px;
 }
 
 .store__3 {
   display: flex;
   gap: 446px;
   justify-content: center;
+  padding-bottom: 95px;
 }
 
 .store__3__icon {
@@ -882,7 +888,6 @@ footer {
 /* АДАПТАЦИЯ ДЛЯ IPHONE 12 PRO (до 430px) */
 /* ============================================ */
 @media screen and (max-width: 430px) {
-  /* === Общие исправления === */
   body {
     overflow-x: hidden;
   }
@@ -1188,6 +1193,7 @@ footer {
     align-items: center;
     margin-top: 30px;
     gap: 0;
+    padding-bottom: 0;
   }
   .store__3__icon {
     margin-top: 20px;
