@@ -1,0 +1,1202 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: regular;
+  src: url(../fonts/Inter/static/Inter_18pt-Regular.ttf);
+}
+@font-face {
+  font-family: medium;
+  src: url(../fonts/Inter/static/Inter_18pt-Medium.ttf);
+}
+@font-face {
+  font-family: bold;
+  src: url(../fonts/Inter/static/Inter_18pt-Bold.ttf);
+}
+@font-face {
+  font-family: semiBold;
+  src: url(../fonts/Inter/static/Inter_18pt-SemiBold.ttf);
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #E7EDDE;
+}
+
+/* шапка */
+.header_1, .header__get_the_app, .header__planta, .header__support {
+  display: flex;
+  justify-content: center;
+  gap: 598px;
+}
+
+.header__support {
+  font-size: 0.9375em;
+  font-family: regular;
+  color: #224722;
+  margin-top: 40px;
+}
+
+.header__planta {
+  width: 106px;
+  height: 29px;
+  margin-top: 35.5px;
+}
+
+.header__get_the_app {
+  font-family: regular;
+  font-size: 0.938em;
+  color: #224722;
+  margin-top: 33px;
+  padding: 7px 16.8px 7px 17px;
+  border: #224722 1px solid;
+  border-radius: 9999px;
+  max-width: 85.17px;
+}
+
+/* блок 1 */
+.conteiner1 {
+  display: flex;
+  justify-content: center;
+}
+
+.all__text1 {
+  margin-top: 224.22px;
+  z-index: 1;
+}
+
+.all__content1 {
+  margin-right: 570px;
+}
+
+.conteiner1__headline {
+  font-family: bold;
+  font-size: 6.25em;
+  color: #224722;
+  width: 534px;
+  height: 336px;
+  line-height: 100px;
+}
+
+.conteiner1__text {
+  color: #224722;
+  font-family: regular;
+  font-size: 1.188em;
+  max-width: 527.95px;
+  line-height: 28px;
+}
+
+.store__1 {
+  display: flex;
+  gap: 16px;
+  margin-top: 52.1px;
+}
+
+.app-icon, .app-menu, .add-plant {
+  margin: 356.1px 586.4px auto 782.6px;
+  position: absolute;
+  border-radius: 9999px;
+  box-shadow: inset;
+  z-index: 1;
+  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.add-plant {
+  margin: 545.28px 190.8px auto 1116.2px;
+}
+
+.app-menu {
+  margin: 726.4px 196.65px auto 927.35px;
+}
+
+.phone {
+  width: 350px;
+  height: 700px;
+  margin-top: 154.5px;
+  margin-left: 580px;
+  border-radius: 58px;
+  position: absolute;
+  z-index: 2;
+}
+
+/* блок 2 */
+.all__content2 {
+  margin-top: 234.5px;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(1, 498px);
+  grid-template-columns: repeat(2, 498px);
+  gap: 112px;
+}
+
+.watering {
+  max-width: 498px;
+  max-height: 498px;
+  position: absolute;
+  display: grid;
+}
+
+.watering__text {
+  position: absolute;
+  border-radius: 9999px;
+  max-width: 221.8px;
+  max-height: 56px;
+}
+
+#watering_text__img {
+  position: absolute;
+  margin-left: 37.33px;
+  margin-top: 35.11px;
+  z-index: 2;
+}
+
+#watering_text__p {
+  position: absolute;
+  border-radius: 9999px;
+  background-color: #FFFFFF;
+  z-index: 1;
+  font-family: regular, sans-serif;
+  font-size: 1.063em;
+  margin-left: 20px;
+  margin-top: 20px;
+  min-width: 158px;
+  padding: 16px 11.8px 19px 52px;
+}
+
+.all__text2 {
+  display: grid;
+  align-content: center;
+}
+
+.care_schedules {
+  font-family: regular, sans-serif;
+  font-size: 1.063em;
+  color: #224722;
+  line-height: 28px;
+  margin-bottom: 3px;
+  margin-bottom: 8px;
+}
+
+.care_reminders {
+  font-family: bold;
+  font-size: 3.5em;
+  color: #224722;
+  line-height: 56px;
+  margin-bottom: 24px;
+  width: 460px;
+  width: 382px;
+  margin-bottom: 20px;
+}
+
+.care__text {
+  font-family: regular, sans-serif;
+  font-size: 1.25em;
+  color: #224722;
+  line-height: 28px;
+  max-width: 482.58px;
+  max-height: 109px;
+}
+
+.download {
+  margin-top: 42px;
+  height: 20px;
+  width: 106.51px;
+  color: #E0FFC0;
+  font-family: regular;
+  font-size: 0.938em;
+  padding: 18px 35.8px 18px 36px;
+  background-color: #224722;
+  border-radius: 9999px;
+}
+
+/* Блок 3 */
+.all__content3 {
+  margin-top: 128px;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(1, 498px);
+  grid-template-columns: repeat(2, 498px);
+  gap: 112px;
+}
+
+.all__text3 {
+  display: grid;
+  align-content: center;
+}
+
+.scan {
+  font-family: regular, sans-serif;
+  font-size: 1.063em;
+  color: #224722;
+  line-height: 28px;
+  margin-bottom: 3px;
+  margin-bottom: 8px;
+}
+
+.plant__identification {
+  font-family: bold;
+  font-size: 3.5em;
+  color: #224722;
+  line-height: 56px;
+  margin-bottom: 24px;
+  width: 460px;
+  margin-bottom: 20px;
+}
+
+.plant__identification__text {
+  font-family: regular, sans-serif;
+  font-size: 1.25em;
+  color: #224722;
+  line-height: 28px;
+  width: 496.43px;
+}
+
+.foto__plants {
+  border-radius: 50%;
+  width: 498px;
+  height: 498px;
+  position: absolute;
+  z-index: 1;
+  display: grid;
+}
+
+.foto__plants_text {
+  z-index: 3;
+  position: absolute;
+}
+
+#foto__plants_text__img {
+  position: absolute;
+  margin-top: 209px;
+  z-index: 2;
+  margin-top: 36px;
+  margin-left: 16px;
+}
+
+#foto__plants_text__p {
+  position: absolute;
+  border-radius: 9999px;
+  background-color: #FFFFFF;
+  z-index: 1;
+  font-family: regular, sans-serif;
+  font-size: 1.063em;
+  padding: 16px 11.8px 17px 52px;
+  margin-top: 20px;
+  width: 127.32px;
+}
+
+/* Блок 4 */
+.all__content4 {
+  margin-top: 128px;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(1, 498px);
+  grid-template-columns: repeat(2, 498px);
+  gap: 112px;
+}
+
+.room__plants {
+  position: absolute;
+  height: 498px;
+  width: 498px;
+  border-radius: 0 305px 305px 0;
+  display: grid;
+}
+
+#room__plants__text__img {
+  position: absolute;
+  margin-top: 435.33px;
+  margin-left: 33.33px;
+  z-index: 2;
+}
+
+#room__plants__text__p {
+  position: absolute;
+  border-radius: 9999px;
+  background-color: #FFFFFF;
+  z-index: 1;
+  font-family: regular, sans-serif;
+  font-size: 1.063em;
+  margin-top: 422px;
+  padding: 18px 16px 20px 52px;
+  margin-left: 22px;
+}
+
+.all__text4 {
+  display: grid;
+  align-content: center;
+}
+
+.find {
+  font-family: regular, sans-serif;
+  font-size: 1.063em;
+  color: #224722;
+  line-height: 28px;
+  margin-bottom: 3px;
+  margin-bottom: 10px;
+}
+
+.Light__meter {
+  font-family: bold;
+  font-size: 3.5em;
+  color: #224722;
+  line-height: 56px;
+  margin-bottom: 24px;
+  width: 460px;
+  margin-bottom: 20px;
+}
+
+.Light__meter__text {
+  font-family: regular, sans-serif;
+  font-size: 1.25em;
+  color: #224722;
+  line-height: 28px;
+  width: 496.83px;
+}
+
+/* Блок 5 */
+.all__content5 {
+  margin-top: 128px;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(1, 498px);
+  grid-template-columns: 498px 554px;
+  gap: 56px;
+}
+
+.all__text5 {
+  display: grid;
+  align-content: center;
+}
+
+.Plant__doctor {
+  font-family: regular, sans-serif;
+  font-size: 1.063em;
+  color: #224722;
+  line-height: 28px;
+  margin-bottom: 3px;
+  margin-bottom: 13px;
+}
+
+.Dr__Planta {
+  font-family: bold;
+  font-size: 3.5em;
+  color: #224722;
+  line-height: 56px;
+  margin-bottom: 24px;
+  width: 460px;
+  line-height: 52px;
+}
+
+.Dr__Planta__text {
+  font-family: regular, sans-serif;
+  font-size: 1.25em;
+  color: #224722;
+  line-height: 28px;
+  width: 473.12px;
+}
+
+.Change {
+  display: grid;
+  position: absolute;
+  border-radius: 120px;
+  width: 498px;
+  height: 498px;
+  margin-left: 56px;
+}
+
+#Change__text__img {
+  position: absolute;
+  z-index: 2;
+  margin-top: 70.67px;
+  margin-left: 14.67px;
+}
+
+#Change__text__p {
+  padding: 18px 11.8px 20px 52px;
+  margin-top: 56px;
+  position: absolute;
+  border-radius: 9999px;
+  background-color: #FFFFFF;
+  z-index: 1;
+  font-family: regular, sans-serif;
+  font-size: 1.063em;
+  width: 178.61px;
+  z-index: 1;
+}
+
+/* Комментарии */
+.people__saying {
+  font-family: bold;
+  font-size: 3.5em;
+  text-align: center;
+  color: #224722;
+  line-height: 56px;
+  margin-top: 110px;
+}
+
+.store__2 {
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.store__app1, .store__app2 {
+  display: flex;
+  justify-content: baseline;
+}
+
+.app-store2 {
+  font-size: 1.1875em;
+  font-family: regular;
+  color: #224722;
+  background-color: #D9E7CB;
+  border-radius: 9999px 9999px 9999px 9999px;
+  padding: 10px 0 11px 52px;
+  max-height: 46px;
+}
+
+#mark {
+  color: #224722;
+  font-size: 1.125em;
+  font-family: bold;
+  background-color: #D9E7CB;
+  line-height: 30px;
+  padding-right: 23.8px;
+  border-radius: 0 9999px 9999px 0;
+  margin-left: 3.8px;
+}
+
+#aps_1, #aps_2 {
+  background-color: #D9E7CB;
+  margin-right: 5px;
+  padding-left: 30px;
+  position: absolute;
+  border-radius: 9999px 0 0 9999px;
+  margin-top: 15px;
+}
+
+#aps_2 {
+  padding-left: 26px;
+}
+
+.comments__people {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.comm1 {
+  display: block;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  min-width: 1058px;
+  min-height: 255px;
+  margin-top: 80px;
+  color: #224722;
+}
+
+.comm2 {
+  display: block;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  min-width: 1058px;
+  min-height: 255px;
+  margin-top: 80px;
+  color: #224722;
+}
+
+.comm3 {
+  display: block;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  min-width: 1058px;
+  min-height: 255px;
+  margin-top: 80px;
+  color: #224722;
+}
+
+.UserComment {
+  background-color: #FFFFFF;
+  font-size: 1.5em;
+  font-family: medium;
+  line-height: 39px;
+  margin: 27px 24px 10px 24px;
+  max-width: 186.92px;
+  min-height: 33px;
+}
+
+.UserComment__text {
+  background-color: #FFFFFF;
+  font-size: 1.125em;
+  font-family: regular;
+  line-height: 27px;
+  max-width: 1001.28px;
+  margin-left: 24px;
+  margin-bottom: 82px;
+}
+
+#Totally__amazing__text1 {
+  max-height: 50px;
+}
+
+/* оценка */
+.score {
+  width: 159.7px;
+  margin-left: 24px;
+  display: flex;
+  background-color: #FFFFFF;
+  justify-content: baseline;
+  margin-bottom: 26px;
+}
+
+.Gella8 {
+  font-size: 0.938em;
+  font-family: regular;
+  line-height: 24px;
+  background-color: #FFFFFF;
+  height: 20px;
+}
+
+.star {
+  background-color: #FFFFFF;
+  height: 19px;
+  width: 21px;
+}
+
+#star_1 {
+  margin-left: 7.8px;
+}
+
+.change__slide {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 38px;
+}
+
+.circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: #224722 1px solid;
+}
+
+.change__slide :hover {
+  background-color: #224722;
+}
+
+.circle:active {
+  background-color: #224722;
+}
+
+/* комментарий 2 */
+#Super__helpful {
+  max-width: 532.67px;
+  border-radius: 20px;
+}
+
+#Super__helpful__text {
+  margin-bottom: 109.5px;
+}
+
+#Christie {
+  height: 20px;
+  min-width: 56.97px;
+}
+
+#love__it__text {
+  margin-bottom: 109.5px;
+  height: 23px;
+}
+
+#Miia {
+  min-width: 81.65px;
+  height: 20px;
+}
+
+/* Блок 6 */
+.whatever__plant {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  font-size: 3.5em;
+  font-family: bold;
+  color: #224722;
+  line-height: 56px;
+  margin-top: 156px;
+}
+
+#whatever__plant__text {
+  margin-top: 19px;
+}
+
+.all__content6 {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(2, 264px);
+  grid-template-columns: 247.88px 370.12px 247.88px 194.77px;
+  gap: 16.01px;
+  margin-top: 64px;
+  grid-template-areas: "x y z w" "r r d w";
+  margin-bottom: 188px;
+}
+
+#whatever__plant__heading {
+  text-align: center;
+}
+
+/* cactus_succulents */
+#cactus_succulents {
+  border-radius: 0 0 250px 0;
+  position: absolute;
+  max-height: 264px;
+  max-width: 247.88px;
+}
+
+.cactus_succulents1__text {
+  font-family: semiBold, sans-serif;
+  font-size: 1.75em;
+  color: #FFFFFF;
+  line-height: 40px;
+  position: absolute;
+  z-index: 1;
+  max-width: 217px;
+  margin: 36px 0 0 16.01px;
+}
+
+#plus1 {
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  background-color: transparent;
+  margin: 209px 0 0 16.01px;
+}
+
+/* vegetables */
+#vegetables {
+  position: absolute;
+  border-radius: 311px;
+}
+
+.vegetables1__text {
+  font-family: semiBold, sans-serif;
+  font-size: 1.75em;
+  color: #FFFFFF;
+  line-height: 40px;
+  position: absolute;
+  z-index: 1;
+  max-width: 153px;
+  margin: 112px 201.12px 112px 16px;
+}
+
+#plus2 {
+  position: absolute;
+  height: 16.25px;
+  width: 16.25;
+  background-color: transparent;
+  margin: 112.5px 173.06px 135.25px 180.81px;
+}
+
+/* herbs */
+#herbs {
+  border-radius: 40px 40px 40px 0;
+  position: absolute;
+}
+
+.herbs1__text {
+  font-family: semiBold, sans-serif;
+  font-size: 1.75em;
+  color: #FFFFFF;
+  line-height: 40px;
+  position: absolute;
+  z-index: 1;
+  max-width: 82.05px;
+  margin: 16px 149.82px 208px 16.01px;
+}
+
+#plus3 {
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  background-color: transparent;
+  margin: 209px 192.85px 16px 16.01px;
+}
+
+/* orchids */
+#orchids {
+  border-radius: 0 0 200px 0;
+  position: absolute;
+}
+
+.orchids1__text {
+  font-family: semiBold, sans-serif;
+  font-size: 1.75em;
+  color: #FFFFFF;
+  line-height: 40px;
+  position: absolute;
+  z-index: 1;
+  max-width: 110.07px;
+  margin: 16px 68.69px 488px 16.01px;
+}
+
+#plus4 {
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  background-color: transparent;
+  margin: 489px 139.73px 16px 16.01px;
+}
+
+/* foliage_plants */
+#foliage_plants {
+  border-radius: 0 200px 0 200px;
+  position: absolute;
+}
+
+.foliage_plants1__text {
+  font-family: semiBold, sans-serif;
+  font-size: 1.75em;
+  color: #FFFFFF;
+  line-height: 40px;
+  position: absolute;
+  z-index: 1;
+  max-width: 163.11px;
+  margin: 36px 454.89px 148px 16.01px;
+}
+
+#plus5 {
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  background-color: transparent;
+  margin: 209px 16.01px 16px 578.98px;
+}
+
+/* flowering_plants */
+#flowering_plants {
+  border-radius: 40px 0 40px 40px;
+  position: absolute;
+}
+
+.flowering_plants__text {
+  font-family: semiBold, sans-serif;
+  font-size: 1.75em;
+  color: #FFFFFF;
+  line-height: 40px;
+  position: absolute;
+  z-index: 1;
+  max-width: 162.11px;
+  margin: 36px 69.36px 148px 16.42px;
+}
+
+#plus6 {
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  background-color: transparent;
+  margin: 209px 192.85px 16px 16.01px;
+}
+
+/* подвал */
+footer {
+  background-color: #172C17;
+}
+
+.planta__footer {
+  background-color: #172C17;
+  display: flex;
+  justify-content: center;
+  gap: 285px;
+}
+
+#planta__heading__footer_img {
+  margin-top: 81px;
+}
+
+.footer__li {
+  display: flex;
+  margin-top: 69px;
+  gap: 168px;
+}
+
+#footer__navigation {
+  width: 188px;
+}
+
+#footer__contact {
+  width: 105px;
+}
+
+#footer__follow {
+  width: 88px;
+}
+
+/* список */
+#footer__heading, #footer__items {
+  color: #E0FFC0;
+  font-size: 1.125em;
+  font-family: semiBold;
+  line-height: 40px;
+}
+
+#footer__items {
+  color: #7C956B;
+}
+
+.store__3 {
+  display: flex;
+  gap: 446px;
+  justify-content: center;
+  padding-bottom: 95px;
+}
+
+.store__3__icon {
+  margin-top: 216px;
+  display: flex;
+  gap: 24px;
+}
+
+#planta__icon {
+  height: 36px;
+  width: 36px;
+}
+
+.getPlanta {
+  font-family: semiBold;
+  font-size: 1.125em;
+  color: #E0FFC0;
+  margin-top: 225px;
+}
+
+/* ============================================ */
+/* АДАПТАЦИЯ ДЛЯ IPHONE 12 PRO (до 430px) */
+/* ============================================ */
+@media screen and (max-width: 430px) {
+  body {
+    overflow-x: hidden;
+  }
+  .header_1, .header__support, .header__planta, .header__get_the_app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 0;
+  }
+  .header__planta {
+    margin: 0;
+    width: 90px;
+    height: auto;
+  }
+  .header__planta img {
+    width: 80px;
+    height: auto;
+  }
+  .header__get_the_app {
+    margin: 0;
+    font-size: 0.6875em;
+    padding: 5px 12px;
+  }
+  .header_1 .header__support, .header__support .header__support, .header__planta .header__support, .header__get_the_app .header__support {
+    margin-top: 0;
+    font-size: 0.8125em;
+  }
+  /* === Блок 1 === */
+  .conteiner1 {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .all__content1 {
+    margin-right: 0;
+    text-align: center;
+    order: 1;
+  }
+  .all__text1 {
+    margin-top: 30px;
+  }
+  .conteiner1__headline {
+    font-size: 3.5em;
+    width: auto;
+    height: auto;
+    line-height: 75px;
+    text-align: center;
+  }
+  .conteiner1__text {
+    font-size: 0.875em;
+    max-width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 20px;
+  }
+  .store__1 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .store__1 img {
+    width: 120px;
+    height: auto;
+  }
+  /* Телефон */
+  .phone {
+    position: relative;
+    width: 270px;
+    height: auto;
+    margin: 30px auto 0 auto;
+    left: auto;
+    display: block;
+    order: 2;
+  }
+  .app-icon, .add-plant, .app-menu {
+    display: none;
+  }
+  /* === КАРТИНКИ С ТЕКСТОМ === */
+  .all__content2,
+  .all__content3,
+  .all__content4,
+  .all__content5 {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 15px;
+  }
+  .watering,
+  .foto__plants,
+  .room__plants,
+  .Change {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+    order: 1;
+  }
+  /* Сама картинка */
+  .watering img,
+  .foto__plants img,
+  .room__plants img,
+  .Change img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  /* Иконка */
+  #watering_text__img,
+  #foto__plants_text__img,
+  #room__plants__text__img,
+  #Change__text__img {
+    display: none;
+  }
+  /* Текстовый блок (белая плашка) */
+  #watering_text__p,
+  #foto__plants_text__p,
+  #room__plants__text__p,
+  #Change__text__p {
+    display: none;
+  }
+  .all__text2,
+  .all__text3,
+  .all__text4,
+  .all__text5 {
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
+    order: 2;
+  }
+  /* Заголовки */
+  .care_reminders,
+  .plant__identification,
+  .Light__meter,
+  .Dr__Planta {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  /* Обычный текст */
+  .care__text,
+  .plant__identification__text,
+  .Light__meter__text,
+  .Dr__Planta__text {
+    font-size: 16px;
+    line-height: 1.4;
+    width: 100%;
+    max-width: 100%;
+  }
+  /* Кнопка */
+  .download {
+    margin: 15px auto 0;
+    display: inline-block;
+  }
+  /* === Комментарии === */
+  .people__saying {
+    font-size: 2.25em;
+    line-height: 1.2em;
+    padding: 0 20px;
+  }
+  .app-store2 {
+    font-size: 0.8755em;
+    padding: 5px 0 6px 42px;
+    margin-bottom: 50px;
+  }
+  #mark {
+    font-size: 1.0625em;
+  }
+  #aps_1, #aps_2 {
+    height: 20px;
+    width: 20px;
+    margin-top: 9px;
+    padding-left: 15px;
+  }
+  #aps_2 {
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    padding-left: 15px;
+  }
+  .comments__people {
+    align-items: center;
+    gap: 15px;
+  }
+  .comm1, .comm3 {
+    display: none;
+  }
+  .comm2 {
+    min-width: 100%;
+    margin: 0px;
+  }
+  /* === Сетка растений === */
+  .all__content6 {
+    grid-template-columns: repeat(2, 185px);
+    grid-template-rows: repeat(4, 185px);
+    grid-template-areas: "x y" "z w" "d w" "r r";
+    gap: 10px;
+    padding: 0 10px;
+  }
+  .whatever__plant {
+    font-size: 2.25em;
+    line-height: 1.2em;
+  }
+  #whatever__plant__text {
+    margin-top: 10px;
+  }
+  #cactus_succulents, #herbs, #flowering_plants {
+    height: 185px;
+    width: 185px;
+  }
+  #plus1, #plus3, #plus6 {
+    margin-top: 140px;
+    height: 29px;
+    width: 29px;
+    margin-left: 20px;
+  }
+  #vegetables {
+    height: 175px;
+    width: 185px;
+  }
+  #plus2 {
+    margin: 89.37px;
+  }
+  #orchids {
+    height: 380px;
+    width: 160px;
+    margin-left: 12.5px;
+  }
+  #plus4 {
+    margin-top: 335px;
+    margin-left: 22.5px;
+    height: 29px;
+    width: 29px;
+  }
+  #foliage_plants {
+    width: 380px;
+    height: 185px;
+  }
+  #plus5 {
+    margin: 145px 0 0 330px;
+    height: 29px;
+    width: 29px;
+  }
+  /* Текст на карточках растений */
+  .cactus_succulents1__text,
+  .vegetables1__text,
+  .herbs1__text,
+  .orchids1__text,
+  .flowering_plants__text {
+    font-size: 1.2em;
+    line-height: 1.2;
+    max-width: 100px;
+  }
+  .foliage_plants1__text {
+    margin-top: 25px;
+    margin-left: 25px;
+    font-size: 1.2em;
+    line-height: 1.2;
+    max-width: 100px;
+  }
+  /* === Подвал === */
+  footer {
+    padding: 40px 20px;
+  }
+  .planta__footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  #planta__heading__footer_img {
+    margin: 0;
+    width: 150px;
+  }
+  .footer__li {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer__navigation, #footer__contact, #footer__follow {
+    margin: 0;
+    text-align: center;
+  }
+  .store__3 {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 0;
+    padding-bottom: 0;
+  }
+  .store__3__icon {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+  }
+  .getPlanta {
+    margin: 30px 0 0 0;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
